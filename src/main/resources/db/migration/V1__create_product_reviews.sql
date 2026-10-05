@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS product_reviews (
+    reviewid BIGSERIAL PRIMARY KEY,
+    product_id BIGINT,
+    user_id BIGINT,
+    rating INTEGER,
+    comment VARCHAR(255),
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    update_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
